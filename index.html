@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CalcPro | Smart Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background Decoration -->
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+
+
+    <!-- MAIN CONTAINER -->
+
+    <main class="app-container">
+
+        <!-- HEADER -->
+
+        <header class="app-header">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+
+                <div>
+                    <h1>Calc<span>Pro</span></h1>
+                    <p>Smart & Simple Calculator</p>
+                </div>
+
+            </div>
+
+            <button
+                class="header-btn"
+                id="clearHistory"
+                title="Clear History">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+            </button>
+
+        </header>
+
+
+        <!-- CALCULATOR -->
+
+        <section class="calculator">
+
+            <!-- DISPLAY -->
+
+            <div class="display">
+
+                <div class="calculation" id="previousDisplay">
+                    Ready to calculate
+                </div>
+
+                <div class="result-row">
+
+                    <div
+                        class="result"
+                        id="currentDisplay">
+                        0
+                    </div>
+
+                    <button
+                        class="copy-btn"
+                        id="copyBtn"
+                        title="Copy Result">
+
+                        <i class="fa-regular fa-copy"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="keypad">
+
+                <!-- ROW 1 -->
+
+                <button
+                    class="key action"
+                    data-action="clear">
+                    AC
+                </button>
+
+                <button
+                    class="key action"
+                    data-action="backspace">
+
+                    <i class="fa-solid fa-delete-left"></i>
+
+                </button>
+
+                <button
+                    class="key operator"
+                    data-value="%">
+                    %
+                </button>
+
+                <button
+                    class="key operator"
+                    data-value="/">
+
+                    ÷
+
+                </button>
+
+
+                <!-- ROW 2 -->
+
+                <button class="key" data-value="7">
+                    7
+                </button>
+
+                <button class="key" data-value="8">
+                    8
+                </button>
+
+                <button class="key" data-value="9">
+                    9
+                </button>
+
+                <button
+                    class="key operator"
+                    data-value="*">
+
+                    ×
+
+                </button>
+
+
+                <!-- ROW 3 -->
+
+                <button class="key" data-value="4">
+                    4
+                </button>
+
+                <button class="key" data-value="5">
+                    5
+                </button>
+
+                <button class="key" data-value="6">
+                    6
+                </button>
+
+                <button
+                    class="key operator"
+                    data-value="-">
+
+                    −
+
+                </button>
+
+
+                <!-- ROW 4 -->
+
+                <button class="key" data-value="1">
+                    1
+                </button>
+
+                <button class="key" data-value="2">
+                    2
+                </button>
+
+                <button class="key" data-value="3">
+                    3
+                </button>
+
+                <button
+                    class="key operator"
+                    data-value="+">
+
+                    +
+
+                </button>
+
+
+                <!-- ROW 5 -->
+
+                <button
+                    class="key action"
+                    data-action="toggle-sign">
+
+                    +/−
+
+                </button>
+
+                <button class="key" data-value="0">
+                    0
+                </button>
+
+                <button
+                    class="key"
+                    data-value=".">
+
+                    .
+
+                </button>
+
+                <button
+                    class="key equals"
+                    data-action="calculate">
+
+                    =
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- KEYBOARD INFO -->
+
+        <div class="keyboard-info">
+
+            <i class="fa-regular fa-keyboard"></i>
+
+            <span>
+                Keyboard supported
+            </span>
+
+            <div class="shortcut">
+                <kbd>Enter</kbd>
+                <span>Calculate</span>
+            </div>
+
+            <div class="shortcut">
+                <kbd>Esc</kbd>
+                <span>Clear</span>
+            </div>
+
+        </div>
+
+
+        <!-- HISTORY -->
+
+        <section class="history-section">
+
+            <div class="section-title">
+
+                <div>
+                    <span class="section-label">
+                        CALCULATIONS
+                    </span>
+
+                    <h2>
+                        Recent <span>History</span>
+                    </h2>
+                </div>
+
+                <button
+                    class="clear-history-text"
+                    id="clearHistoryText">
+
+                    Clear All
+
+                </button>
+
+            </div>
+
+
+            <div
+                class="history-list"
+                id="historyList">
+
+                <div class="empty-history">
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    <p>
+                        No calculations yet
+                    </p>
+
+                    <span>
+                        Your recent calculations will appear here
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                © 2026 CalcPro
+            </p>
+
+            <span>
+                Built with HTML • CSS • JavaScript
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <!-- TOAST -->
+
+    <div
+        class="toast"
+        id="toast">
+
+        <i class="fa-solid fa-check"></i>
+
+        <span id="toastMessage">
+            Copied!
+        </span>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
