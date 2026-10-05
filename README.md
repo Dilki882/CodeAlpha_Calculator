@@ -44,12 +44,10 @@ CalcPro/
 4. Start using the calculator.
 
 🌐 Live Demo
-
-"View CalcPro Live Demo" (https://dilki882.github.io/CodeAlpha_Calculator/)
+"https://dilki882.github.io/CodeAlpha_Calculator/"
 
 💻 GitHub Repository
-
-"View Source Code" (https://github.com/Dilki882/CodeAlpha_Calculator.git)
+"https://github.com/Dilki882/CodeAlpha_Calculator.git"
 
 🎓 Internship Project
 
