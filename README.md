@@ -45,7 +45,11 @@ CalcPro/
 
 🌐 Live Demo
 
-"View CalcPro Live Demo" (PASTE-YOUR-GITHUB-PAGES-LINK-HERE)
+"View CalcPro Live Demo" (https://dilki882.github.io/CodeAlpha_Calculator/)
+
+💻 GitHub Repository
+
+"View Source Code" (https://github.com/Dilki882/CodeAlpha_Calculator.git)
 
 🎓 Internship Project
 
